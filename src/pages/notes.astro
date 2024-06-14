@@ -1,7 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import NavigationBar from '../components/NavigationBar.astro';
 import '../styles/globle.css';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -34,10 +36,7 @@ import '../styles/globle.css';
 				</linearGradient>
 			</defs>
 		</svg>
-        <a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
-        <a href="/notes/">笔记</a>
+		<NavigationBar/>
 		<h1>课程笔记</h1>
         <p>在这个页面，我将展示我的一些有关课程笔记。</p>
         <ul>
@@ -46,6 +45,7 @@ import '../styles/globle.css';
         </ul>
 		
 	</main>
+	<Footer />
 </Layout>
 
 <style>
